@@ -1,0 +1,32 @@
+R# version: 5.1.3000.12
+assembly Microsoft.ApplicationServer.HttpEnhancements, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\WebApi.Enhancements.0.6.0\lib\40-Full\Microsoft.ApplicationServer.HttpEnhancements.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.ApplicationServer.HttpEnhancements.dll mtime 12/1/2011 16:02:06
+referenced assembly Microsoft.ApplicationServer.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\WebApi.0.6.0\lib\40-Full\Microsoft.ApplicationServer.Http.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.ApplicationServer.Http.dll mtime 12/1/2011 16:02:06
+referenced assembly System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\HttpClient.0.6.0\lib\40\System.Net.Http.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\System.Net.Http.dll mtime 12/1/2011 16:02:06
+referenced assembly Microsoft.Net.Http.Formatting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\HttpClient.0.6.0\lib\40\Microsoft.Net.Http.Formatting.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.Net.Http.Formatting.dll mtime 12/1/2011 16:02:06
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 7/9/2011 09:30:10
+referenced assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.dll mtime 3/18/2010 18:31:26
+referenced assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.Activation.dll mtime 3/18/2010 18:31:26
+referenced assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll mtime 3/18/2010 18:31:26
+referenced assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.Web.dll mtime 3/18/2010 18:31:26
+referenced assembly Microsoft.Server.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\WebApi.0.6.0\lib\40-Full\Microsoft.Server.Common.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.Server.Common.dll mtime 12/1/2011 16:02:06

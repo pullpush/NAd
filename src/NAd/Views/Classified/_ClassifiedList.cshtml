@@ -1,0 +1,29 @@
+﻿@model IEnumerable<NAd.UI.ViewModels.ClassifiedViewModel>
+
+<p>
+    @Html.ActionLink("Create New", "Add")
+</p>
+<table>
+    <tr> 
+        <th>Actions</th>
+        <th>Name</th>
+         <th>Description</th>
+        </tr>
+    @foreach (var item in Model) {    
+        <tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id },
+                new AjaxOptions { Confirm = "Delete Expense?", HttpMethod = "Post", 
+                    UpdateTargetId = "divCategoryList" })              
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Description
+            </td>
+        </tr>
+    
+    }
+</table>

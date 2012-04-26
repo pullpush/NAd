@@ -1,0 +1,12 @@
+R# version: 5.1.3000.12
+assembly Autofac, Version=2.5.2.830, Culture=neutral, PublicKeyToken=17863af14b0044da
+  file D:\Projects\Workshop\NAd\packages\Autofac.2.5.2.830\lib\NET40\Autofac.dll mtime 10/24/2011 14:34:24
+  file D:\Projects\Workshop\NAd\NAd\Bin\Autofac.dll mtime 10/24/2011 14:34:24
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 7/9/2011 09:30:10
+referenced assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll mtime 3/18/2010 18:31:26
+referenced assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll mtime 3/18/2010 18:31:26
+referenced assembly System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\System.ComponentModel.Composition.dll mtime 3/18/2010 12:16:28

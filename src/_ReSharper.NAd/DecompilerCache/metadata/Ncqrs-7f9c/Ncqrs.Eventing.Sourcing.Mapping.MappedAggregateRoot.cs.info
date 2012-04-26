@@ -1,0 +1,25 @@
+R# version: 5.1.3000.12
+assembly Ncqrs, Version=0.8.0.0, Culture=neutral
+  file D:\Projects\Workshop\NAd\Libs\debug\Ncqrs\Ncqrs.dll mtime 11/16/2011 14:26:16
+  file D:\Projects\Workshop\NAd\Libs\release\Framework\Ncqrs.dll mtime 11/16/2011 14:26:16
+  file D:\Projects\Workshop\NAd\NAd\Bin\Ncqrs.dll mtime 11/16/2011 14:26:16
+  file D:\Projects\Workshop\NAd\NAd.Querying.Host\Bin\Ncqrs.dll mtime 11/16/2011 14:26:16
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 7/9/2011 09:30:10
+referenced assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\System.Transactions.dll mtime 3/18/2010 12:16:28
+referenced assembly Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+  file D:\Projects\Workshop\NAd\Libs\release\Framework\Newtonsoft.Json.dll mtime 10/12/2011 05:06:08
+referenced assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll mtime 3/18/2010 18:31:26
+referenced assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll mtime 3/18/2010 18:31:26
+referenced assembly log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821
+  file D:\Projects\Workshop\NAd\packages\log4net.1.2.10\lib\2.0\log4net.dll mtime 11/21/2011 16:27:18
+  file D:\Projects\Workshop\NAd\NAd\Bin\log4net.dll mtime 11/21/2011 16:27:18
+referenced assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Serialization.dll mtime 3/18/2010 18:31:26

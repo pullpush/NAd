@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NAd.Commanding.Commands" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NAd.Commanding.Commands" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9002/NAdCommandService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Ncqrs.Commanding" />
+  <xs:complexType name="CreateNewClassifiedCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Ncqrs.Commanding" base="q1:CommandBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateNewClassifiedCommand" nillable="true" type="tns:CreateNewClassifiedCommand" />
+  <xs:complexType name="ServicedCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Ncqrs.Commanding" base="q2:CommandBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServicedCommand" nillable="true" type="tns:ServicedCommand" />
+</xs:schema>

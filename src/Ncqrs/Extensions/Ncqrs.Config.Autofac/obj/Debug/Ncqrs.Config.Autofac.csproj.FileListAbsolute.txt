@@ -1,0 +1,5 @@
+D:\Projects\Workshop\NAd\lib\Debug\Ncqrs.Config.Autofac\Ncqrs.Config.Autofac.dll
+D:\Projects\Workshop\NAd\lib\Debug\Ncqrs.Config.Autofac\Ncqrs.Config.Autofac.pdb
+D:\Projects\Workshop\NAd\Ncqrs\Extensions\Ncqrs.Config.Autofac\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Workshop\NAd\Ncqrs\Extensions\Ncqrs.Config.Autofac\obj\Debug\Ncqrs.Config.Autofac.dll
+D:\Projects\Workshop\NAd\Ncqrs\Extensions\Ncqrs.Config.Autofac\obj\Debug\Ncqrs.Config.Autofac.pdb

@@ -1,0 +1,7 @@
+ERROR
+[5017:SessionTimeOut] Sorry, but your session on our site has timed out. The session is configured to time out after a certain period as a security precaution. Please go to our Home Page to continue.
+
+
+
+ERROR
+[5022:NoTermsOfUseAcceptanceFoundException] Please indicate that you have read and accept the Terms of Use and click on Search for Flights button.

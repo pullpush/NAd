@@ -1,0 +1,26 @@
+<Modules>
+  <Module PersistentId="4DE20208-8D75-46A2-ACF7-3E5A47A15D62" ModuleId="NAd.UI" />
+  <Module PersistentId="AC889A84-AABE-47E6-81AD-13F33F422ED7" ModuleId="NAd.Querying.Core" />
+  <Module PersistentId="C7BD81ED-BBEF-498C-B83A-EB0ED75B54BD" ModuleId="NAd.Ncqrs.Commands" />
+  <Module PersistentId="3605BB7B-0E58-4BDF-9542-8281162F8C34" ModuleId="Commanding.Host" />
+  <Module PersistentId="0EBAECFC-9A56-4ADD-AD41-7B007CFF99F1" ModuleId="Ncqrs.Config.Autofac" />
+  <Module PersistentId="B276616E-95DC-481D-A19D-65FFAB6B65D0" ModuleId="NAd.Ncqrs.Domain" />
+  <Module PersistentId="BC6E50F1-76D6-4453-B6B7-4A45867FA98F" ModuleId="NAd.Common" />
+  <Module PersistentId="EFE55B50-D87F-4BB4-B6EB-3790DDD66E5B" ModuleId="NAd.Ncqrs.Events" />
+  <Module PersistentId="756DCA72-975C-4F4D-A65F-63013622C49A" ModuleId="NAd.Querying.Host" />
+  <Module PersistentId="7AF9F0CC-E3BC-4D02-9CD8-17CF8F635F05" ModuleId="Ncqrs.Config.Autofac.Tests" />
+  <Module PersistentId="343CF4B4-E355-4164-AABF-CB403A57AC99" ModuleId="Ncqrs.Commanding.Validation" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="Autofac" />
+  <Module PersistentId="BA91CA56-3547-4AA3-B4BD-00233A4D3F79" ModuleId="NAd.Framework.Persistence.Raven" />
+  <Module PersistentId="5EADA310-8394-4C72-B865-F91E43F35F18" ModuleId="NAd.Framework.Persistence" />
+  <Module PersistentId="892F3DA1-91DF-4F13-817B-1D7904BF13AE" ModuleId="NAd.Framework.Persistence.NHibernate" />
+  <Module PersistentId="3039677D-4C09-4753-ABE6-BB94346729BA" ModuleId="NAd.Framework_1" />
+  <Module PersistentId="48777664-E954-4E8C-99F3-BEA9E490444D" ModuleId="NAd.Framework.Domain" />
+  <Module PersistentId="B4225B50-51AB-4F5D-A0D4-FA650710A81F" ModuleId="NAd.Framework.Specs" />
+  <Module PersistentId="779397E4-EE0C-4197-A4B2-3CD1426550B4" ModuleId="NAd.Framework.Domain.Raven" />
+  <Module PersistentId="900C0477-A93B-4742-8F8B-47364A3867A3" ModuleId="NAd.Web.UI.Core" />
+  <Module PersistentId="A494C5B2-828D-4464-8EB5-1783C0753325" ModuleId="NAd.Framework.Domain.NHibernate" />
+  <Module PersistentId="Ncqrs, Version=0.8.0.0, Culture=neutral" ModuleId="Ncqrs" />
+  <Module PersistentId="Ncqrs.CommandService, Version=1.0.0.0, Culture=neutral" ModuleId="Ncqrs.CommandService" />
+  <Module PersistentId="Ncqrs.CommandService.Contracts, Version=1.0.0.0, Culture=neutral" ModuleId="Ncqrs.CommandService.Contracts" />
+</Modules>

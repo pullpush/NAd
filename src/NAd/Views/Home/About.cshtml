@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "About Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem { Text = String.Empty, Value = String.Empty });
+    foreach (string name in ViewBag.BlogNames)
+    {
+        listItems.Add(new SelectListItem { Text = name, Value = name });
+    }    
+}
+<script src="@Url.Content("~/Scripts/jquery-1.5.1.js")" type="text/javascript"></script>
+
+<h2>About</h2>
+
+@Html.DropDownList("dropDownList", listItems)
+<h2>Owner</h2>
+<p>
+    <span>First Name</span><br />
+    @Html.TextBox("firstName")
+</p>
+<p>
+    <span>Last Name</span><br />
+    @Html.TextBox("lastName")
+</p>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#dropDownList").change(function () {
+            $("#dropDownList option:selected").each(function () {
+                $.getJSON("/Home/Owner/" + $(this).val(), function (data) {
+                    $("#firstName").value = data.FirstName;
+                    $("#lastName").value = data.LastName;
+                });
+            });
+        });
+    });
+</script>

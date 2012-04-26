@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="303863c8-60b5-4ca1-8809-020d006cd2da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9002/NAdCommandService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NAdCommandService.xsd" MetadataType="Schema" ID="a93afb9c-1d48-47fd-9659-b805a8349f5d" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NAdCommandService.wsdl" MetadataType="Wsdl" ID="8a8673fe-c2b8-414f-8d60-70cb05f3b9a0" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="NAdCommandService1.xsd" MetadataType="Schema" ID="2caa7713-6cad-4765-98ca-c246252a99dc" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd3" />
+    <MetadataFile FileName="NAdCommandService.disco" MetadataType="Disco" ID="4eb657be-0ed3-4c8e-a972-9ab8c43067b8" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?disco" />
+    <MetadataFile FileName="NAdCommandService2.xsd" MetadataType="Schema" ID="f66b0c6a-c61d-4302-871b-8f4a9fb3c2cd" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NAdCommandService1.wsdl" MetadataType="Wsdl" ID="0ac40313-4946-4120-872d-ccc06043bcf1" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?wsdl" />
+    <MetadataFile FileName="NAdCommandService3.xsd" MetadataType="Schema" ID="ada6f218-53ec-4b14-902c-866b88eae10a" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

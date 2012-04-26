@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EADA310-8394-4C72-B865-F91E43F35F18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NAd.Framework.Persistence</RootNamespace>
+    <AssemblyName>NAd.Framework.Persistence</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.5.2.830\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstractions\Entity.cs" />
+    <Compile Include="Abstractions\IDataMapper.cs" />
+    <Compile Include="Abstractions\IEntity.cs" />
+    <Compile Include="Abstractions\IEntityKey.cs" />
+    <Compile Include="Abstractions\IHaveVersion.cs" />
+    <Compile Include="Abstractions\IPageRepository.cs" />
+    <Compile Include="Abstractions\IQueryableRepository.cs" />
+    <Compile Include="Abstractions\ISession.cs" />
+    <Compile Include="Abstractions\IPersistAsComponent.cs" />
+    <Compile Include="Abstractions\Model\DocumentReference.cs" />
+    <Compile Include="Abstractions\Model\IDocument.cs" />
+    <Compile Include="Abstractions\Model\IDocumentReference.cs" />
+    <Compile Include="Abstractions\Model\IPageMetadata.cs" />
+    <Compile Include="Abstractions\Model\IPageModel.cs" />
+    <Compile Include="Abstractions\Model\PageMetadata.cs" />
+    <Compile Include="Abstractions\Model\PageMetadataMetadata.cs" />
+    <Compile Include="Abstractions\Model\PageModel.cs" />
+    <Compile Include="Abstractions\Model\PageModelMetadata.cs" />
+    <Compile Include="DatabaseConstants.cs" />
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Abstractions\VersionedEntity.cs" />
+    <Compile Include="Ensure.cs" />
+    <Compile Include="Get.cs" />
+    <Compile Include="RepositoryPattern\AbstractRepository.cs" />
+    <Compile Include="Abstractions\IRepository.cs" />
+    <Compile Include="IUnitOfWorkFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryPattern\SharedDataMapper.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="UnitOfWorkFactory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+<configuration>
+    <system.web>
+        <httpModules>
+            <add name="SessionPerRequest" type="[TODO].Infrastructure.SessionManagement.NHibernateSessionModule, [TODO]" />
+        </httpModules>
+    </system.web>
+    <system.webServer>
+        <modules>
+            <add name="SessionPerRequest" type="[TODO].Infrastructure.SessionManagement.NHibernateSessionModule, [TODO]" />
+        </modules>
+    </system.webServer>
+</configuration>

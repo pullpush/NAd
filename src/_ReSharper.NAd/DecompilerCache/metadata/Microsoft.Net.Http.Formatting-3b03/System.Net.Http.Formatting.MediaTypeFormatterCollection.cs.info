@@ -1,0 +1,23 @@
+R# version: 5.1.3000.12
+assembly Microsoft.Net.Http.Formatting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\HttpClient.0.6.0\lib\40\Microsoft.Net.Http.Formatting.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.Net.Http.Formatting.dll mtime 12/1/2011 16:02:06
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 7/9/2011 09:30:10
+referenced assembly System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\HttpClient.0.6.0\lib\40\System.Net.Http.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\System.Net.Http.dll mtime 12/1/2011 16:02:06
+referenced assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll mtime 3/18/2010 18:31:26
+referenced assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll mtime 3/18/2010 18:31:26
+referenced assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Serialization.dll mtime 3/18/2010 18:31:26
+referenced assembly Microsoft.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\JsonValue.0.6.0\lib\40\Microsoft.Json.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.Json.dll mtime 12/1/2011 16:02:06
+referenced assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll mtime 3/18/2010 18:31:26
+referenced assembly Microsoft.Server.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  file D:\Projects\Workshop\NAd\packages\WebApi.0.6.0\lib\40-Full\Microsoft.Server.Common.dll mtime 12/1/2011 16:02:06
+  file D:\Projects\Workshop\NAd\NAd\Bin\Microsoft.Server.Common.dll mtime 12/1/2011 16:02:06

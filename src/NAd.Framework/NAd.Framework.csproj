@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3039677D-4C09-4753-ABE6-BB94346729BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NAd.Framework</RootNamespace>
+    <AssemblyName>NAd.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.2.5.2.830\lib\NET40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hive\NAdUnitOfWork.cs" />
+    <Compile Include="Hive\NAdUnitOfWorkFactory.cs" />
+    <Compile Include="Hive\NHibernate\NHibernateUnitOfWorkFactory.cs" />
+    <Compile Include="Hive\NHibernate\NHibernateUnitOfWorkModule.cs" />
+    <Compile Include="Hive\Raven\RavenRepositoryExtensions.cs" />
+    <Compile Include="Hive\Raven\RavenUnitOfWorkFactory.cs" />
+    <Compile Include="Hive\NAdUnitOfWorkModule.cs" />
+    <Compile Include="PageModelAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hive\Raven\RavenUnitOfWorkModule.cs" />
+    <Compile Include="ResourceHelper.cs" />
+    <Compile Include="Services\ClassifiedService.cs" />
+    <Compile Include="Services\IClassifiedService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NAd.Common\NAd.Common.csproj">
+      <Project>{BC6E50F1-76D6-4453-B6B7-4A45867FA98F}</Project>
+      <Name>NAd.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Domain\NAd.Framework.Domain.csproj">
+      <Project>{48777664-E954-4E8C-99F3-BEA9E490444D}</Project>
+      <Name>NAd.Framework.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Persistence.NHibernate\NAd.Framework.Persistence.NHibernate.csproj">
+      <Project>{892F3DA1-91DF-4F13-817B-1D7904BF13AE}</Project>
+      <Name>NAd.Framework.Persistence.NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Persistence.Raven\NAd.Framework.Persistence.Raven.csproj">
+      <Project>{BA91CA56-3547-4AA3-B4BD-00233A4D3F79}</Project>
+      <Name>NAd.Framework.Persistence.Raven</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Persistence\NAd.Framework.Persistence.csproj">
+      <Project>{5EADA310-8394-4C72-B865-F91E43F35F18}</Project>
+      <Name>NAd.Framework.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

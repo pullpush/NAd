@@ -1,0 +1,15 @@
+﻿@model IEnumerable<NAd.UI.ViewModels.ClassifiedViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<h2>Classifieds List</h2>
+<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>   
+
+<div id="divCategoryList">          
+    @Html.Partial("_ClassifiedList", Model)
+</div>
