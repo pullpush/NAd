@@ -37,3 +37,7 @@ src/*/obj
 ehthumbs.db
 Icon?
 Thumbs.db
+
+
+*.pdb
+_ReSharper*/
