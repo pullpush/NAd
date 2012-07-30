@@ -59,6 +59,10 @@
       <Project>{EFE55B50-D87F-4BB4-B6EB-3790DDD66E5B}</Project>
       <Name>NAd.Ncqrs.Events</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework\NAd.Framework.csproj">
+      <Project>{3039677D-4C09-4753-ABE6-BB94346729BA}</Project>
+      <Name>NAd.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NAd.Querying.Core\NAd.Querying.Core.csproj">
       <Project>{AC889A84-AABE-47E6-81AD-13F33F422ED7}</Project>
       <Name>NAd.Querying.Core</Name>

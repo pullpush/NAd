@@ -9,7 +9,8 @@ using System.Net.Http.Headers;
 using System.Net.Http.Formatting;
 
 using NAd.Ncqrs.Commands;
-using NAd.Querying.Core.Domain;
+//using NAd.Querying.Core.Domain;
+//using NAd.Framework.
 using NAd.Querying.Host.Infrastructure.Formatters;
 using NAd.Querying.Host.Resources.Classifieds.Representations;
 using NAd.UI.Commanding;

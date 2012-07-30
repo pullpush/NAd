@@ -6,6 +6,7 @@
       <xsd:import schemaLocation="http://localhost:9002/NAdCommandService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:9002/NAdCommandService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NAd.Commanding.Commands" />
       <xsd:import schemaLocation="http://localhost:9002/NAdCommandService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Ncqrs.Commanding" />
+      <xsd:import schemaLocation="http://localhost:9002/NAdCommandService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/NAd.Ncqrs.Commands" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="INAdCommandService_Execute_InputMessage">

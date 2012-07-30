@@ -54,7 +54,7 @@ namespace NAd.Querying.Host
 
             containerBuilder.RegisterType<ClassifiedService>().As<IClassifiedService>();
 
-            string connectionStringName = "QueryContext";
+            string connectionStringName = ConfigurationManager.ConnectionStrings["QueryContext"].ConnectionString;
             containerBuilder.RegisterModule(new RavenUnitOfWorkModule(connectionStringName));
 
             IContainer container = containerBuilder.Build();

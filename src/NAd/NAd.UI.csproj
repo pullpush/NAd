@@ -14,6 +14,7 @@
     <AssemblyName>NAd.UI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -260,6 +261,9 @@
     <None Include="Service References\Commanding\NAdCommandService.disco" />
     <None Include="Service References\Commanding\configuration91.svcinfo" />
     <None Include="Service References\Commanding\configuration.svcinfo" />
+    <None Include="Service References\Commanding\NAdCommandService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\Commanding\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

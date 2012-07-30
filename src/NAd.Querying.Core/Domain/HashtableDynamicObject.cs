@@ -5,6 +5,11 @@ using System.Dynamic;
 
 namespace NAd.Querying.Core.Domain
 {
+    /// <summary>
+    /// search for support dynamic fields in nhibernate, eav model in NH
+    /// </summary>
+    /// <see cref="http://ayende.com/blog/4776/support-dynamic-fields-with-nhibernate-and-net-4-0"/>
+    /// <seealso cref="http://stackoverflow.com/questions/2784547/using-nhibernate-with-an-eav-data-model"/>
     public class HashtableDynamicObject : DynamicObject
     {
         private readonly IDictionary _dictionary;

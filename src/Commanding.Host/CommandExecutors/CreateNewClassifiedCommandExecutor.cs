@@ -21,13 +21,13 @@ namespace NAd.Commanding.CommandExecutors
     /// All business logic is captured within these objects and is not used for querying. 
     /// This allows us to optimize this model for behavior.
     /// </remarks>
-    public class CreateNewClassifiedCommandExecutor : CommandExecutorBase<CreateNewClassifiedCommand>
-    {
-        protected override void ExecuteInContext(IUnitOfWorkContext context, CreateNewClassifiedCommand command)
-        {
-            var newClassified = new Classified(Guid.NewGuid(), command.Name, command.Description);
+    //public class CreateNewClassifiedCommandExecutor : CommandExecutorBase<CreateNewClassifiedCommand>
+    //{
+    //    protected override void ExecuteInContext(IUnitOfWorkContext context, CreateNewClassifiedCommand command)
+    //    {
+    //        var newClassified = new Classified(Guid.NewGuid(), command.Name, command.Description);
 
-            context.Accept();
-        }
-    }
+    //        context.Accept();
+    //    }
+    //}
 }

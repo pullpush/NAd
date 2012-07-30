@@ -2,8 +2,12 @@
 
 using NAd.Common;
 using NAd.Ncqrs.Events;
-using NAd.Querying.Core.Services;
-using NAd.Querying.Core.ExceptionHandling;
+
+using NAd.Framework.Services;
+using NAd.Common.ExceptionHandling;
+
+//using NAd.Querying.Core.Services;
+//using NAd.Querying.Core.ExceptionHandling;
 
 using Ncqrs;
 using Ncqrs.Domain;

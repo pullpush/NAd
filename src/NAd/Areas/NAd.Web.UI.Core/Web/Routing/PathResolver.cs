@@ -32,7 +32,8 @@ namespace NAd.Web.UI.Core.Web.Routing {
 
             
             // The requested url is for the start page with no action
-            if (string.IsNullOrEmpty(virtualUrl) || string.Equals(virtualUrl, "/")) {
+            if (string.IsNullOrEmpty(virtualUrl) || string.Equals(virtualUrl, "/") || virtualUrl.StartsWith("classifieds"))
+            {
                 //_pageModel = _pageService.SingleOrDefault<IPageModel>(x => x.Parent == null);
                 //_pageModel = _pageService.GetPageByUrl(null);
                 //This is a site home page

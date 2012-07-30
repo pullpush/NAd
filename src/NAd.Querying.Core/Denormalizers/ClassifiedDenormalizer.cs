@@ -2,10 +2,13 @@
 //using System.Linq;
 
 using NAd.Ncqrs.Events;
-using NAd.Querying.Core.Domain;
-using NAd.Querying.Core.Persistency;
-using NAd.Querying.Core.Common;
-using NAd.Querying.Core.Services;
+
+using NAd.Framework.Domain;
+using NAd.Framework.Services;
+
+//using NAd.Querying.Core.Persistency;
+//using NAd.Querying.Core.Common;
+//using NAd.Querying.Core.Services;
 
 
 using Ncqrs;
@@ -58,7 +61,7 @@ namespace NAd.Querying.Core.Denormalizers
         {
             var classifiedService = NcqrsEnvironment.Get<IClassifiedService>();
 
-            var classified = classifiedService.GetById(evnt.Payload.ClassifiedId);
+            var classified = classifiedService.Get(evnt.Payload.ClassifiedId);
 
             if (classified == null) return;
 

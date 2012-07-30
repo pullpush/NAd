@@ -44,7 +44,7 @@ namespace NAd.Framework.Persistence.Raven
             get
             {
                 //queryable = _documentSession.Query<T>();
-                return _documentSession.Query<T>();
+                return _documentSession.Query<T>().Customize(x => x.WaitForNonStaleResultsAsOfNow());
             }
         }
 

@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Reflection;
 using System.ServiceModel.Activation;
+using System.Configuration;
 
 using NAd.Ncqrs.Events;
 using NAd.Commanding.Commands;
 using NAd.Commanding.CommandExecutors;
-using NAd.Querying.Core.Common;
-using NAd.Querying.Core.Persistency;
+//using NAd.Querying.Core.Common;
+using NAd.Common;
+//using NAd.Querying.Core.Persistency;
+using NAd.Framework.Persistence;
+using NAd.Framework.Hive.NHibernate;
+using NAd.Framework.Hive.Raven;
 using NAd.Querying.Core.Denormalizers;
-using NAd.Querying.Core.Services;
+//using NAd.Querying.Core.Services;
+using NAd.Framework.Services;
 using Ncqrs.Commanding.Validation.FluentValidation;
 
 using Autofac;
+using Autofac.Core;
 using Autofac.Configuration;
 using Autofac.Integration.Wcf;
+
 using log4net;
 using log4net.Appender;
 //using NServiceBus;
@@ -66,17 +74,18 @@ namespace NAd.Commanding
             //containerBuilder.RegisterType<NsbEventBus>().As<IEventBus>();
             //containerBuilder.RegisterType<RavenDBEventStore>().As<IEventStore>();
 
-            containerBuilder.RegisterType<NAdCommandService>().As<INAdCommandService>();
+            containerBuilder.RegisterInstance<IKnownCommandsEnumerator>(new AllCommandsInAppDomainEnumerator());
+
+            //containerBuilder.RegisterType<NAdCommandService>().As<INAdCommandService>();
 
             containerBuilder.RegisterInstance<IEventStore>(InitializeEventStore());
             containerBuilder.RegisterInstance<ICommandService>(InitializeCommandService());
             containerBuilder.RegisterInstance<IEventBus>(InitializeEventBus(containerBuilder));
-            //containerBuilder.RegisterInstance<IKnownCommandsEnumerator>(new AllCommandsInAppDomainEnumerator());
 
             //containerBuilder.RegisterType<ClassifiedService>().As<IClassifiedService>();
 
-            string connectionStringName = "QueryContext";
-            containerBuilder.RegisterModule(new NAdUnitOfWorkModule(connectionStringName));
+            string connectionStringName = ConfigurationManager.ConnectionStrings["QueryContext"].ConnectionString;
+            containerBuilder.RegisterModule(new RavenUnitOfWorkModule(connectionStringName));
 
             //Generate generic factories with Autofac
             //http://peterspattern.com/generate-generic-factories-with-autofac/
@@ -99,7 +108,7 @@ namespace NAd.Commanding
             container = containerBuilder.Build();
             AutofacConfiguration config = new AutofacConfiguration(container);
 
-            Ioc.Global = container;
+            //Ioc.Global = container;
             AutofacHostFactory.Container = container;
 
             // I believe this is a single call to configure inject all component dependencies
@@ -118,7 +127,7 @@ namespace NAd.Commanding
         {
             var service = new CommandService();
             //service.RegisterExecutor(new CreateNewClassifiedCommandExecutor());
-            service.RegisterAllExplicitCommandExecutorsInAssembly(typeof(CreateNewClassifiedCommandExecutor).Assembly);
+            //service.RegisterAllExplicitCommandExecutorsInAssembly(typeof(CreateNewClassifiedCommandExecutor).Assembly);
 
             service.RegisterExecutorsInAssembly(typeof(CreateNewClassified).Assembly);
 
@@ -145,7 +154,9 @@ namespace NAd.Commanding
             var bus = new InProcessEventBus();
 
             //Func<Type, object> convert = s => s.GetInterface("d", true);
-            bus.RegisterAllHandlersInAssembly(typeof(ClassifiedDenormalizer).Assembly);
+            //bus.RegisterAllHandlersInAssembly(typeof(ClassifiedDenormalizer).Assembly);
+            bus.RegisterHandler<NewClassifiedCreated>(new ClassifiedDenormalizer());
+            bus.RegisterHandler<ClassifiedDescriptionChanged>(new ClassifiedDenormalizer());
             //builder.Register(c => new ClassifiedDenormalizer(c.Resolve<IClassifiedService>()));
             //bus.RegisterHandler<NewClassifiedCreated>(new ClassifiedDenormalizer());
             //bus.RegisterHandler(new InMemoryBufferedEventHandler(buffer));

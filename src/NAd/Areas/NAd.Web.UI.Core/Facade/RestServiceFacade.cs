@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
 using System.ServiceModel;
+using Newtonsoft.Json;
 using NAd.Querying.Host.Infrastructure.Formatters;
 using Ncqrs.CommandService.Contracts;
 
@@ -66,11 +67,13 @@ namespace NAd.Web.UI.Core.Facade
             //string requestMessage = "classified/{0}";
 
             //T resource = null;
-            var resource = default(T);
+            var resource = default(NAd.UI.PageModels.Portfolio);
 
             using (HttpResponseMessage response = SendRequest(string.Format(requestMessage, id)))
             {
-                resource = response.Content.ReadAsAsync<T>(Formatters).Result;
+                resource = JsonConvert.DeserializeObject<Portfolio>(response.Content.ReadAsStringAsync().Result);
+
+                //resource = response.Content.ReadAsAsync<T>(Formatters).Result;
             }
 
             return resource;

@@ -23,6 +23,7 @@
   <Metadata>
     <MetadataFile FileName="NAdCommandService.xsd" MetadataType="Schema" ID="a93afb9c-1d48-47fd-9659-b805a8349f5d" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd0" />
     <MetadataFile FileName="NAdCommandService.wsdl" MetadataType="Wsdl" ID="8a8673fe-c2b8-414f-8d60-70cb05f3b9a0" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="NAdCommandService4.xsd" MetadataType="Schema" ID="8171166e-060f-4bf0-8bab-85df73b917aa" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd4" />
     <MetadataFile FileName="NAdCommandService1.xsd" MetadataType="Schema" ID="2caa7713-6cad-4765-98ca-c246252a99dc" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd3" />
     <MetadataFile FileName="NAdCommandService.disco" MetadataType="Disco" ID="4eb657be-0ed3-4c8e-a972-9ab8c43067b8" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?disco" />
     <MetadataFile FileName="NAdCommandService2.xsd" MetadataType="Schema" ID="f66b0c6a-c61d-4302-871b-8f4a9fb3c2cd" SourceId="1" SourceUrl="http://localhost:9002/NAdCommandService.svc?xsd=xsd1" />

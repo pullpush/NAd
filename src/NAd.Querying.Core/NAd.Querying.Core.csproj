@@ -72,65 +72,16 @@
   <ItemGroup>
     <Compile Include="Common\Ioc.cs" />
     <Compile Include="Denormalizers\ClassifiedDenormalizer.cs" />
-    <Compile Include="Domain\Entity.cs" />
-    <Compile Include="Domain\HashtableDynamicObject.cs" />
-    <Compile Include="Domain\IEntity.cs" />
-    <Compile Include="Domain\IHaveVersion.cs" />
-    <Compile Include="Domain\VersionedEntity.cs" />
     <Compile Include="ExceptionHandling\ExceptionHelper.cs" />
     <Compile Include="ExceptionHandling\RestServiceFault.cs" />
     <Compile Include="ExceptionHandling\ServiceError.cs" />
     <Compile Include="ExceptionHandling\ServiceRule.cs" />
-    <Compile Include="Persistency\Common\PagedEnumerableExtensions.cs" />
-    <Compile Include="Persistency\Common\SortedPagedEnumerable.cs" />
-    <Compile Include="Persistency\MappingOverrides\ClassifiedMappingOverride.cs" />
-    <Compile Include="Domain\Classified.cs" />
-    <Compile Include="Persistency\Common\IDataMapper.cs" />
-    <Compile Include="Persistency\Common\IPagedEnumerable.cs" />
-    <Compile Include="Persistency\Common\IPersistAsComponent.cs" />
-    <Compile Include="Persistency\Common\IUnitOfWorkFactory.cs" />
-    <Compile Include="Persistency\Common\PagedEnumerable.cs" />
-    <Compile Include="Persistency\RepositoryPattern\Repository.cs" />
-    <Compile Include="Persistency\Common\SharedDataMapper.cs" />
-    <Compile Include="Persistency\Common\UnitOfWork.cs" />
-    <Compile Include="Persistency\Common\UnitOfWorkFactory.cs" />
-    <Compile Include="Persistency\NAdUnitOfWork.cs" />
-    <Compile Include="Persistency\NAdUnitOfWorkFactory.cs" />
-    <Compile Include="Persistency\NAdUnitOfWorkModule.cs" />
-    <Compile Include="Persistency\NHibernate\AutoMappingConfiguration.cs" />
-    <Compile Include="Persistency\NHibernate\DatabaseConstants.cs" />
-    <Compile Include="Persistency\NHibernate\DataServices\IDbMethods.cs" />
-    <Compile Include="Persistency\NHibernate\DataServices\NHibernateContext.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\NAdExceptionPolicy.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\DataLengthExceptionPolicy.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\ForeignKeyConstraintExceptionPolicy.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\GenericADOExceptionExtensions.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\INHibernateExceptionPolicy.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\NHibernateExceptionInterceptor.cs" />
-    <Compile Include="Persistency\NHibernate\ExceptionHandling\UniqueConstraintExceptionPolicy.cs" />
-    <Compile Include="Persistency\NHibernate\ExtendedHqlGenerator.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateDataMapper.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateQueryableExtensions.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateRepository.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateSessionFactoryManager.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateUnitOfWorkFactory.cs" />
-    <Compile Include="Persistency\NHibernate\NHibernateUnitOfWorkModule.cs" />
-    <Compile Include="Persistency\RepositoryPattern\IEntityKey.cs" />
-    <Compile Include="Persistency\RepositoryPattern\IPersistRepository.cs" />
-    <Compile Include="Persistency\RepositoryPattern\IReadOnlyRepository.cs" />
-    <Compile Include="Persistency\UnitOfWorkModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ClassifiedService.cs" />
-    <Compile Include="Services\IClassifiedService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
-    <Folder Include="Persistency\Model\" />
-    <Folder Include="Persistency\RdmsModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\NAd.Common\NAd.Common.csproj">
       <Project>{BC6E50F1-76D6-4453-B6B7-4A45867FA98F}</Project>
@@ -139,6 +90,18 @@
     <ProjectReference Include="..\NAd.Events\NAd.Ncqrs.Events.csproj">
       <Project>{EFE55B50-D87F-4BB4-B6EB-3790DDD66E5B}</Project>
       <Name>NAd.Ncqrs.Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Domain\NAd.Framework.Domain.csproj">
+      <Project>{48777664-E954-4E8C-99F3-BEA9E490444D}</Project>
+      <Name>NAd.Framework.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework.Persistence\NAd.Framework.Persistence.csproj">
+      <Project>{5EADA310-8394-4C72-B865-F91E43F35F18}</Project>
+      <Name>NAd.Framework.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NAd.Framework\NAd.Framework.csproj">
+      <Project>{3039677D-4C09-4753-ABE6-BB94346729BA}</Project>
+      <Name>NAd.Framework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

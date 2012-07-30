@@ -36,7 +36,9 @@ namespace NAd.Web.UI.Core.Facade
         /// <returns></returns>
         public IPageModel GetPageByUrl(string url)
         {
-            return GetById("classified/{0}/pagebyurl", url);
+            //return GetById("classified/{0}/pagebyurl", url);
+            return GetById("classified/{0}", url);
+
             //return _documentSession.Query<T, Document_ByUrl>()
             //    .Customize(x => x.WaitForNonStaleResultsAsOfLastWrite())
             //    .Where(x => x.Metadata.Url == url)

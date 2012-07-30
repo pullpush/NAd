@@ -3,6 +3,7 @@
 //using System.Linq;
 //using System.Reflection;
 using System.ServiceModel;
+using System.ServiceModel.Activation;
 
 //using Microsoft.Practices.Unity;
 
@@ -20,8 +21,10 @@ namespace NAd.Commanding
     /// <summary>
     /// Service interface that accepts one or more commands to be executed at the classifieds domain model.
     /// </summary>
+    //[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
     //[ServiceKnownType("GetKnownTypes")]
     [ExceptionShieldingBehavior]
+    //[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class NAdCommandService : INAdCommandService
     {
         //private static ICommandExecutor<ServicedCommand> executor;

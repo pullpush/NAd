@@ -11,6 +11,7 @@ src/*/obj
 *.exe
 *.o
 *.so
+*.pdb
 
 # Packages #
 ############
@@ -38,6 +39,6 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
-
-*.pdb
+src/packages/
+src/Libs/
 _ReSharper*/

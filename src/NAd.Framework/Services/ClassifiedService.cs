@@ -27,9 +27,14 @@ namespace NAd.Framework.Services
             using (var uow = unitOfWorkFactory())
             {
                 var classifieds = uow.Classifieds.FilterBy(
-                        p => partialName.Length == 0 || (p.Name.Contains(partialName))
-                          && partialDescription.Length == 0 || (p.Description.Contains(partialDescription))
-                    ).AsPaged(1, 10);
+                        p => (p.Name.StartsWith(partialName))
+                          && (p.Description.StartsWith(partialDescription))
+                    ); //.AsPaged(1, 10);
+
+                //var classifieds = uow.Classifieds.FilterBy(
+                //        p => partialName.Length == 0 || (p.Name.StartsWith(partialName))
+                //          && partialDescription.Length == 0 || (p.Description.StartsWith(partialDescription))
+                //    ); //.AsPaged(1, 10);
 
                 //AI: this approach is also valid
                 //var classifieds = from classified in uow.Classifieds
@@ -56,7 +61,7 @@ namespace NAd.Framework.Services
             using (var uow = unitOfWorkFactory())
             {
                 uow.Classifieds.Save(classified);
-                //uow.SubmitChanges();
+                uow.SubmitChanges();
             }
         }
 

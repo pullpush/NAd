@@ -19,7 +19,7 @@ using System.Net.Http.Formatting;
 
 using NAd.UI.ViewModels;
 using NAd.UI.Commanding;
-using NAd.Querying.Core.Domain;
+//using NAd.Querying.Core.Domain;
 using NAd.UI.Facade;
 
 namespace NAd.UI.Controllers

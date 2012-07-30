@@ -18,7 +18,7 @@ namespace NAd.Framework.Domain
         public virtual DateTime CreatedDate { get; set; }
 
         public virtual List<AttributeValue<string>> StringAttributes { get; set; }
-        
+
         public virtual List<AttributeValue<int>> IntegerAttributes { get; set; }
 
         //public virtual dynamic Attributes
